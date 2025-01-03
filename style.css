@@ -1,0 +1,105 @@
+nav{
+    background-color: rgb(34, 151, 190);
+    font-weight: bold;
+}
+.video-container {
+    height: 200px; /* Set a height for the video container */
+    background-color: #f3f3f3;
+    border: 1px solid black;
+}
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+}
+.topic-box {
+    height: 64px; /* Set height for topic box */
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; /* Add some space between the topic boxes */
+}
+.topic-box:hover{
+    background-color: green;
+    color: white;
+}
+h2{
+    text-align: center;
+}
+/* Container styles */
+.container-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Level 1 Box */
+.level-box {
+    background-color: #f0f8ff;
+    border: 2px solid #007bff;
+    padding: 30px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    height: 110px;
+}
+
+.level-box h4 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.level-box p {
+    color: #333;
+    font-size: 16px;
+}
+
+/* Option Box styles */
+.option-box {
+    background-color: #136791;
+    border: 2px solid #136791;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 20px;
+    flex: 1;
+    margin-right: 10px;
+}
+
+.option-box:hover {
+    background-color: #cce5ff; /* Light blue on hover */
+}
+
+.option-box.selected {
+    background-color: #007bff; /* Blue background when selected */
+    color: white;
+}
+
+/* Option Text styles */
+.option-text {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container-custom {
+        flex-direction: column;
+    }
+
+    .level-box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .option-box {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
