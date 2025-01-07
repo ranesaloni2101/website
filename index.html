@@ -35,13 +35,12 @@
         </nav>
     </header>
     
-    <div class="container mt-5">
-        <div class="row">
+        <div class="row mt-1">
             <!-- Video Section (60%) -->
             <div class="col-md-8">
                 <div class="row">
                     <div class="col-md-4 mb-3">
-                        <div class="video-container">
+                        <div class="video-container w-200">
                             <iframe src="video.mp4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
                         </div>
                     </div>
@@ -60,9 +59,9 @@
     
             <!-- Topic Section (40%) -->
             <div class="col-md-4">
-                <div class="w-100 p-1" style="border: 1px solid green;">
-                    <div class="topic-box">
-                        <h4>Login:<br>Password:</h4>
+                <div class="w-100 h-50 p-5" style="border: 1px solid green;">
+                    <div class="topic-box ">
+                        <h4 style="font-size: 1.2rem;">Login:<input type="text"><br>Password:<input type="password"></h4>
                     </div>
                 </div>
                 <div class="w-100 h-50 p-3" style="border: 1px solid green; background: url(img.jpeg);background-position: center;">
@@ -70,8 +69,7 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container my-5 mt-1" style="background-color: rgb(218, 218, 218);">
+    <div class="container my-5 mt-2" style="background-color: rgb(218, 218, 218);">
         <h2>Join 1.1M+ Happy Students Who Trust Us!</h2>
         <!-- Main container for ratings -->
         <div class="row justify-content-center mt-4">
@@ -115,10 +113,9 @@
     </div>
     <h2 style="margin-top: -35px;">Get Expert Help for Programming Homework</h2>
     <p style="text-align: center;">Get the best-rated step-by-step problem explanations from 65,000+ expert tutors with TutorBin programming homework help.</p>
-    <div class="container mt-0">
         <div class="container-main">
             <!-- Container 1 -->
-            <div class="small-container">
+            <div class="small-container col-md-3">
                 <div class="container-image">
                     <div class="logo">
                         <img src="logo1.png" alt="Logo 1">
@@ -128,12 +125,13 @@
                 <div class="description">
                     <h5>Java Homework Help</h5>
                     <p>Get expert Java homework help with clear, step-by-step solutions.</p>
+                    <button>Level 1</button>
                     <button><a href="">Know More</a></button>
                 </div>
             </div>
     
             <!-- Container 2 -->
-            <div class="small-container">
+            <div class="small-container col-md-3">
                 <div class="container-image">
                     <div class="logo">
                         <img src="logo2.jpeg" alt="Logo 1">
@@ -148,7 +146,21 @@
             </div>
     
             <!-- Container 3 -->
-            <div class="small-container">
+            <div class="small-container col-md-3">
+                <div class="container-image">
+                    <div class="logo">
+                        <img src="logo3.png" alt="Logo 1">
+                    </div>                
+                    <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 3">
+                </div>
+                <div class="description">
+                    <h5>Python Homework Help</h5>
+                    <p>Get expert Python homework help with step-by-step solutions and personalized assistance. </p>
+                    <button><a href="">Know More</a></button>
+                </div>
+            </div>
+            <!-- Container 4 -->
+            <div class="small-container col-md-3">
                 <div class="container-image">
                     <div class="logo">
                         <img src="logo3.png" alt="Logo 1">
@@ -162,9 +174,7 @@
                 </div>
             </div>
         </div>
-    </div>
     <hr style="width: 200px;margin-left: 400px;margin-top: -1px;">
-    <div class="container my-5 mt-1">
         <h2 class="text-center mb-4">Student Stories</h2>
         <p style="text-align: center;">TutorBin has received over 3,000 positive ratings from users worldwide. Many students and teachers have greatly benefited from the services provided by TutorBin.</p>
         <div class="row">
@@ -216,7 +226,30 @@
             </div>
           </div>
         </div>
-      </div>
+      <!-- Contact Section -->
+        <h2 class="section-title">Contact Us</h2>
+        <form class="mt-1">
+            <div class="form-row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" style="border: 1px solid black;">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" style="border: 1px solid black;">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" style="border: 1px solid black;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form>
     <script src="script.js"></script>
+    
 </body>
 </html>
