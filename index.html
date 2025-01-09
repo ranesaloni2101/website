@@ -7,8 +7,54 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
     <title>Tech</title>
 </head>
+<style>
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .slide-content {
+        position: relative;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .slide-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .slide-content .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+      .slide-content h5 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .slide-content p {
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+      .slide-content .btn {
+        margin-top: 15px;
+      }
+</style>
 <body>
     <!-- Navbar/Header -->
     <header>
@@ -132,66 +178,106 @@
     </div>
     <h2 id="heading" style="margin-top: 10px;">Get Expert Help for Programming Homework</h2>
     <p style="text-align: center;">Get the best-rated step-by-step problem explanations from 65,000+ expert tutors with TutorBin programming homework help.</p>
-        <div class="container-main">
-            <!-- Container 1 -->
-            <div class="small-container col-md-3">
-                <div class="container-image">
-                    <div class="logo">
-                        <img src="logo1.png" alt="Logo 1">
-                    </div>                
-                    <img src="html-css-collage-concept-with-person_23-2150062008.jpg" alt="Image 1">
-                </div>
-                <div class="description">
-                    <h5>Java Homework Help</h5>
-                    <p>Get expert Java homework help with clear, step-by-step solutions.</p>
-                    <button><a href="">Level 1 Assignment</a></button>
-                </div>
-            </div>
-    
-            <!-- Container 2 -->
-            <div class="small-container col-md-3">
-                <div class="container-image">
-                    <div class="logo">
-                        <img src="logo2.jpeg" alt="Logo 1">
-                    </div>                
-                    <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image 2">
-                </div>
-                <div class="description">
-                    <h5>R Programming Homework Help</h5>
-                    <p>Get expert R programming help with clear solutions and guidance.</p>
-                    <button><a href="">Know More</a></button>
-                </div>
-            </div>
-    
-            <!-- Container 3 -->
-            <div class="small-container col-md-3">
-                <div class="container-image">
-                    <div class="logo">
-                        <img src="logo3.png" alt="Logo 1">
-                    </div>                
-                    <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 3">
-                </div>
-                <div class="description">
-                    <h5>Python Homework Help</h5>
-                    <p>Get expert Python homework help with step-by-step solutions and personalized assistance. </p>
-                    <button><a href="">Know More</a></button>
-                </div>
-            </div>
-            <!-- Container 4 -->
-            <div class="small-container col-md-3">
-                <div class="container-image">
-                    <div class="logo">
-                        <img src="logo3.png" alt="Logo 1">
-                    </div>                
-                    <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 3">
-                </div>
-                <div class="description">
-                    <h5>Python Homework Help</h5>
-                    <p>Get expert Python homework help with step-by-step solutions and personalized assistance. </p>
-                    <button><a href="">Know More</a></button>
-                </div>
-            </div>
+        
+    <!-- Swiper Container -->
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <!-- Repeat for 12 slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="html-css-collage-concept-with-person_23-2150062008.jpg" alt="Image">
+            <img class="logo" src="logo1.png" alt="Logo">
+            <h5>Java Homework Help</h5>
+            <p>Get expert Java homework help with clear, step-by-step solutions.</p>
+            <a href="#" class="btn btn-primary">Level 1 Assignment</a>
+          </div>
         </div>
+
+        <!-- Repeat the slide as needed, just changing the content -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image">
+            <img class="logo" src="logo2.jpeg" alt="Logo">
+            <h5>R Programming Homework Help</h5>
+            <p>Get expert R programming help with clear solutions and guidance.</p>
+            <a href="#" class="btn btn-primary">Level 2 Assignment</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image">
+            <img class="logo" src="logo3.png" alt="Logo">
+            <h5>Python Homework Help</h5>
+            <p>Get expert Python homework help with step-by-step solutions and personalized assistance.</p>
+            <a href="#" class="btn btn-primary">Level 3 Assignment</a>
+          </div>
+        </div>
+
+        <!-- Add more slides in the same pattern till 12 -->
+
+        <!-- Example for a few more slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image">
+            <img class="logo" src="https://via.placeholder.com/40" alt="Logo">
+            <h5>Slide Title 4</h5>
+            <p></p>
+            <a href="#" class="btn btn-primary">Level 4 Assignment</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="slide-content">
+              <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image">
+              <img class="logo" src="https://via.placeholder.com/40" alt="Logo">
+              <h5>Slide Title 5</h5>
+              <p></p>
+              <a href="#" class="btn btn-primary">Level 5 Assignment</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image">
+              <img class="logo" src="https://via.placeholder.com/40" alt="Logo">
+              <h5>Slide Title 6</h5>
+              <p></p>
+              <a href="#" class="btn btn-primary">Level 6 Assignment</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image">
+              <img class="logo" src="https://via.placeholder.com/40" alt="Logo">
+              <h5>Slide Title 7</h5>
+              <p></p>
+              <a href="#" class="btn btn-primary">Level 7 Assignment</a>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="slide-content">
+              <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image">
+              <img class="logo" src="https://via.placeholder.com/40" alt="Logo">
+              <h5>Slide Title 8</h5>
+              <p></p>
+              <a href="#" class="btn btn-primary">Level 8 Assignment</a>
+            </div>
+          </div>
+
+        <!-- Add up to 12 slides -->
+
+      </div>
+
+      <!-- Swiper Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Swiper Navigation -->
+      <div class="swiper-button-next" style="margin-top: 700px;"></div>
+      <div class="swiper-button-prev" style="margin-top: 700px;"></div>
+    </div>
         <h2 id="heading" style="margin-top: 30px;">Assignment</h2>
         <div class="container-main">
             <!-- Container 1 -->
@@ -253,7 +339,7 @@
                 </div>
             </div>
         </div>
-    <hr style="width: 200px;margin-left: 400px;margin-top: -1px;">
+            
         <h2 class="text-center mb-4">Student Stories</h2>
         <p style="text-align: center;">TutorBin has received over 3,000 positive ratings from users worldwide. Many students and teachers have greatly benefited from the services provided by TutorBin.</p>
         <div class="row">
@@ -328,8 +414,80 @@
             </div>
             <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
-        <footer></footer>
+            <div class="row">
+              <!-- Address Section -->
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <div class="card-header bg-primary text-white">
+                    <h5>Address</h5>
+                  </div>
+                  <div class="card-body">
+                    <p><strong>Dombivli East</strong></p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Mobile Number Section -->
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <div class="card-header bg-primary text-white">
+                    <h5>Mobile Number</h5>
+                  </div>
+                  <div class="card-body">
+                    <p><strong>+91 9876543210</strong></p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Google Location Section -->
+              <div class="col-md-4 mb-4">
+                <div class="card">
+                  <div class="card-header bg-primary text-white">
+                    <h5>Google Location</h5>
+                  </div>
+                  <div class="card-body">
+                    <a href="https://goo.gl/maps/yourlink" target="_blank" class="btn btn-danger">View on Google Maps</a>
+                  </div>
+                </div>
+              </div>
+            </div>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000, // Slide changes every 3 seconds
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        // Responsive settings
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      }
+    });
+  </script>
     
 </body>
 </html>
