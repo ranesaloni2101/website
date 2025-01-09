@@ -87,6 +87,10 @@ h2{
 }
 #div1{
     margin-top: 8px;
+    height: 200px;
+}
+#box1{
+    height: 100px;
 }
 /* Responsive design */
 @media (max-width: 768px) {
@@ -98,9 +102,36 @@ h2{
     }
     #box1{
         height: 100px;
+        margin-left: ;
     }
     #d1{
         width: 70px;
-        margin-left: -20px;
+        margin-left: -33px;
+        height: 115px;
+        margin-top: -10px;
+    }
+    #d2{
+        margin-left: -24px;
+        width: 70px;
+        height: 115px;
+        margin-top: -10px;
+    }
+    #d3{
+        margin-left: -14px;
+        width: 70px;
+        height: 115px;
+        margin-top: -10px;
+    }
+    #d4{
+        margin-left: -5px;
+        width: 70px;
+        height: 115px;
+        margin-top: -10px;
+    }
+    #d5{
+        width: 70px;
+        height: 115px;
+        margin-top: -10px;
+        margin-left: 5px;
     }
 }
