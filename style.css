@@ -85,9 +85,9 @@ h2{
     font-size: 32px;
     font-weight: bold;
 }
-#div1{
-    margin-top: 8px;
-    height: 200px;
+#box{
+    margin-top: 140px;
+    background-color: rgb(228, 228, 228);
 }
 #box1{
     height: 100px;
@@ -97,12 +97,12 @@ h2{
     .small-container {
         width: 100%;
     }
-    #div1{
-        margin-top: 250px;
+    #box{
+        margin-top: 350px;
+        border: 1px solid black;
     }
     #box1{
         height: 100px;
-        margin-left: ;
     }
     #d1{
         width: 70px;
@@ -133,5 +133,8 @@ h2{
         height: 115px;
         margin-top: -10px;
         margin-left: 5px;
+    }
+    #heading{
+        margin-top: -20px;
     }
 }
