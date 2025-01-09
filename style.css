@@ -92,6 +92,16 @@ h2{
 #box1{
     height: 100px;
 }
+.contact-info {
+    margin-top: 50px;
+}
+.contact-info h4 {
+    margin-bottom: 20px;
+}
+#div2{
+    border: 1px solid black;
+    width: 100%;
+}
 /* Responsive design */
 @media (max-width: 768px) {
     .small-container {
