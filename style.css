@@ -154,6 +154,9 @@ h2{
     .sub-container {
       max-width: calc(100% / 4 - 20px); /* 1 item per row for small screens */
     }
+    .sub-container img{
+        width: 70px;
+    }
     .button{
         font-size: 10px;
         width: 80px;
