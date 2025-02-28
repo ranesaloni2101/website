@@ -211,6 +211,9 @@ h2{
     #contact{
         margin-top: 1050px;
     }
+    iframe{
+        width: 350px;
+    }
 }
 
 .container {
