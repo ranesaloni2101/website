@@ -1,0 +1,659 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <title>Tech</title>
+</head>
+<style>
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .slide-content {
+        position: relative;
+        background-color: #fff;
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .slide-content img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .slide-content .logo {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+      }
+      .slide-content h5 {
+        margin-top: 15px;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+      .slide-content p {
+        margin-top: 10px;
+        font-size: 1rem;
+      }
+      .slide-content .btn {
+        margin-top: 15px;
+      }
+      .footer-logo {
+        max-height: 50px;
+        margin-bottom: 10px;
+      }
+      .social-icons a {
+        color: #fff;
+        margin: 0 10px;
+        font-size: 1.5rem;
+      }
+      .social-icons a:hover {
+        color: #f8f9fa;
+      }
+      .image-container {
+      width: 40%;
+    }
+    .boxes-container {
+      width: 60%;
+    }
+    .box {
+      padding: 20px;
+      border: 1px solid #ccc;
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    @media (max-width: 768px){
+      .row{
+        height: 500px;
+      }
+      .row .box{
+        position: absolute;
+        margin-top: 300px;
+        height: 100px;
+      }
+      #image{
+        position: absolute;
+        margin-top: 30px;
+        margin-left: -170px;
+      }
+      #m1{
+        position: absolute;
+        margin-top: -300px;
+      }
+      #box{
+        height: 230px;
+      }
+    }
+
+
+</style>
+<body>
+    <!-- Navbar/Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-blue">
+            <div class="container-fluid">
+              <img src="iSPEAK LOGO.png" style="height: 50px; width: 200px;">
+                <a class="navbar-brand" href=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SPOKEN ENGLISH</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#heading">SOFT SKILLS</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#Assignments">NOTES</a>
+                      </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">CONTACT US</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+      <img src="portrait-young-joyful-woman-student-denim-clothes-glasses-with-backpack-holding-world-globe-showing-thumb-up-isolated-blue-background-education-high-school-university-college-concept_365776-15419.jpg" id="i1">
+      <div class="div1">Future Proofing<br>Your Career</div>
+      <div class="div2">SPOKEN ENGLISH<br>SOFT SKILL<br>IELTS</div>
+        <div class="div3">VOCABULARY<br>GRAMMAR<br>CONVERSATION<br>FLUENCY</div>
+        <div class="div4">SCHOOL CHILDREN<br>COLLEGE STUDENT<br>WORKING PERSON<br>PROFESSIONAL<br>HOUSE WIFE</div>
+        <div class="div5">Future Proofing<br>Your Career</div>
+        <div class="div6">Change<br>Guaranteed</div>
+    </div>
+        <div class="row mt-1" id="video-container">
+          <!-- Videos Section (Side by Side) -->
+          <div class="col-md-8">
+            <div class="row mb-4">
+              <div class="col-4 mb-3">
+                <video class="w-100" controls>
+                  <source src="video.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="col-4 mb-3">
+                <video class="w-100" controls>
+                  <source src="video1.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+              <div class="col-4 mb-3">
+                <video class="w-100" controls>
+                  <source src="video2.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Login, Password, and Photo Section -->
+          <div class="col-md-4">
+            <div class="row" id="di1">
+              <!-- Photo Section -->
+              <div id="m1" class="col-9 text-center w-100 " style="height: 480px;">
+                <img id="image" src="img.jpeg" alt="Your Photo" class="img-fluid rounded" width="300" style="height: 480px;width: 100%;">
+              </div>
+            </div>
+          </div>
+        </div>
+    <div id="box">
+        <h2>Join 1.1M+ Happy Students Who Trust Us!</h2>
+        <!-- Main container for ratings -->
+        <div class="row justify-content-center mt-4">
+          <div class="col-2" id="box1">
+            <!-- Small container for each rating item -->
+            <div class="p-3 border border-secondary text-center shadow p-3 mb-5 bg-gray rounded" id="d1">
+                <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                </div>
+                4.4<br> Trust Pilot
+            </div>
+          </div>
+          <div class="col-2" id="box2" >
+            <div class="p-3 border border-secondary text-center shadow p-3 mb-5 bg-gray rounded" id="d2">
+                <div class="rating-stars">
+                    <i class="fas fa-star"></i>
+                </div>
+                4.4<br>Edu Review</div>
+          </div>
+          <div class="col-2" id="box3" >
+            <div class="p-3 border border-secondary text-center shadow p-3 mb-5 bg-gray rounded" id="d3">
+                <div class="rating-stars">
+                    <i class="fa-solid fa-mobile"></i>
+                </div>
+                5<br>App Review</div>
+          </div>
+          <div class="col-2" id="box4" >
+            <div class="p-3 border border-secondary text-center shadow p-3 mb-5 bg-gray rounded" id="d4">
+                <div class="rating-stars">
+                    <i class="fa-solid fa-person"></i>
+                </div>
+                4.8<br>Student</div>
+          </div>
+          <div class="col-2" id="box5" >
+            <div class="p-3 border border-secondary text-center shadow p-3 mb-5 bg-gray rounded" id="d5">
+                <div class="rating-stars">
+                    <i class="fa-solid fa-rocket"></i>
+                </div>
+                5.2<br>Site</div>
+          </div>
+        </div>
+    </div>
+    <h2 id="heading" style="margin-top: 10px;">Get Expert Help for Selecting Courses</h2>
+    <p style="text-align: center;">Get the best-rated step-by-step problem explanations from 65,000+ expert tutors with TutorBin programming homework help.</p>
+        
+    <!-- Swiper Container -->
+    <div class="swiper-container" id="notes">
+      <div class="swiper-wrapper">
+        <!-- Repeat for 12 slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="html-css-collage-concept-with-person_23-2150062008.jpg" alt="Image">
+            <img class="logo" src="logo1.png" alt="Logo">
+            <h5>Java Homework Help</h5>
+            <p>Get expert Java homework help with clear, step-by-step solutions.</p>
+            <a href="level1.html" class="btn btn-primary">Level 1 Assignment</a>
+          </div>
+        </div>
+
+        <!-- Repeat the slide as needed, just changing the content -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image">
+            <img class="logo" src="logo2.jpeg" alt="Logo">
+            <h5>R Programming Homework Help</h5>
+            <p>Get expert R programming help with clear solutions and guidance.</p>
+            <a href="#" class="btn btn-primary">Level 2 Assignment</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image">
+            <img class="logo" src="logo3.png" alt="Logo">
+            <h5>Python Homework Help</h5>
+            <p>Get expert Python homework help with step-by-step solutions and personalized assistance.</p>
+            <a href="#" class="btn btn-primary">Level 3 Assignment</a>
+          </div>
+        </div>
+
+        <!-- Add more slides in the same pattern till 12 -->
+
+        <!-- Example for a few more slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="programming-background-with-person-working-with-codes-computer_23-2150010127.jpg" alt="Image">
+            <img class="logo" src="logo5.png" alt="Logo">
+            <h5>C++ Homework Help</h5>
+            <p>Check our samples to find the maximum subarray sum and fix syntax issues.</p>
+            <a href="#" class="btn btn-primary">Level 4 Assignment</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+            <div class="slide-content">
+              <img src="programming-background-with-person-working-with-codes-computer_23-2150010130.jpg" alt="Image">
+              <img class="logo" src="logo4.png" alt="Logo">
+              <h5>C# Homework Help</h5>
+              <p>Our experts help with C# assignments. Check samples to fix syntax and bugs.</p>
+              <a href="#" class="btn btn-primary">Level 5 Assignment</a>
+            </div>
+          </div>
+
+        <!-- Add up to 12 slides -->
+      </div>    
+      <div class=""></div> 
+    </div>
+    <h2 id="heading" style="margin-top: 10px;">Recommended Courses</h2>        
+    <!-- Swiper Container -->
+    <div class="swiper-container" id="notes">
+      <div class="swiper-wrapper">
+        <!-- Repeat for 12 slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="img2.jpg" alt="Image">
+            <h5>Online Spoken English</h5>
+            <p>Boost your fluency and confidence with our interactive online Spoken English course.
+              Enhance your communication skills through real-life conversations and expert guidance</p>
+            <a href="level1.html" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Repeat the slide as needed, just changing the content -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="img1.jpg" alt="Image">
+            <h5>Spoken English for Kids</h5>
+            <p>The Spoken English course for kids is fun and easy. It helps children speak simple English, learn new words, and say them clearly. Kids gain confidence while playing, singing, and talking in English.</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="img3.jpg" alt="Image">
+            <h5>Individual Spoken English</h5>
+            <p>The Individual Spoken English course offers one-on-one training to improve fluency and confidence. Lessons are tailored to your level and goals for faster, more effective learning.</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Add more slides in the same pattern till 12 -->
+
+        <!-- Example for a few more slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="img4.jpg" alt="Image">
+            <h5>Advance Spoken English</h5>
+            <p>The Advanced Spoken English course helps you master fluent and professional communication. It focuses on rich vocabulary, complex expressions, and confident speaking for work, interviews, and public speaking.</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Add up to 12 slides -->
+      </div>    
+      <div class=""></div> 
+    </div>
+    <!-- Assignment -->
+
+      <h2 id="heading" style="margin-top: 10px;" >Assignment</h2>
+
+      <div class="main-container" id="Assignments">
+        <!-- Create 12 sub-containers -->
+        <div class="sub-container">
+          <img src="html-css-collage-concept-with-person_23-2150062008.jpg" alt="Image 1">
+          <button class="button">Level 1</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 2">
+          <button class="button">Level 2</button>
+        </div>
+        <div class="sub-container">
+          <img src="programming-background-with-person-working-with-codes-computer_23-2150010127.jpg" alt="Image 3">
+          <button class="button">Level 3</button>
+        </div>
+        <div class="sub-container">
+          <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image 4">
+          <button class="button">Level 4</button>
+        </div>
+        <div class="sub-container">
+          <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image 5">
+          <button class="button">Level 5</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 6">
+          <button class="button">Level 6</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-css-collage-concept-with-person_23-2150062008.jpg" alt="Image 7">
+          <button class="button">Level 7</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 8">
+          <button class="button">Level 8</button>
+        </div>
+        <div class="sub-container">
+          <img src="programming-background-with-person-working-with-codes-computer_23-2150010127.jpg" alt="Image 9">
+          <button class="button">Level 9</button>
+        </div>
+        <div class="sub-container">
+          <img src="young-woman-using-mobile-phone_1048944-16078107.jpg" alt="Image 10">
+          <button class="button">Level 10</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-css-collage-concept-with-person_23-2150062008.jpg" alt="Image 11">
+          <button class="button">Level 11</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 12">
+          <button class="button">Level 12</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 13">
+          <button class="button">Level 13</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 14">
+          <button class="button">Level 14</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 15">
+          <button class="button">Level 15</button>
+        </div>
+        <div class="sub-container">
+          <img src="html-system-websites-collage-design_23-2150432971.jpg" alt="Image 16">
+          <button class="button">Level 16</button>
+        </div>
+      </div>
+            
+      <h2 id="heading" style="margin-top: 10px;">Recommended Courses</h2>        
+    <!-- Swiper Container -->
+    <div class="swiper-container" id="notes">
+      <div class="swiper-wrapper">
+        <!-- Repeat for 12 slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="schoolboy-shirt-with-bow-tie-backpack-his-back-shows-his-thumb_328764-551.jpg" alt="Image">
+            <h5>School Kids</h5>
+            <p>Build your child's confidence, communication, learning ability, fluency, education, vocabulary  with i-SPEAK ENGLISH ACADEMY
+            </p>
+            <a href="level1.html" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Repeat the slide as needed, just changing the content -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="happy-pretty-young-indian-lady-student-posing-university-campus_116547-102914.jpg" alt="Image">
+            <h5>College Students</h5>
+            <p>Build your future with spoken English! It boosts confidence, career opportunities, global communication, knowledge access, and social skills. 🚀
+            </p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="young-man-happy-expression-business-desk-company-concept-ai-generated_1194-589229.jpg" alt="Image">
+            <h5>Working Person</h5>
+            <p>Overcome your fear of speaking in English  and develop a new personality for better jobs, confidence, career growth, business success, and opportunities worldwide
+              .</p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Add more slides in the same pattern till 12 -->
+
+        <!-- Example for a few more slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="businesswoman-smiling-camera-while-standing-restaurant-keeping-electronic-tablet-with-two-hands_386167-1081.jpg" alt="Image">
+            <h5>Professional </h5>
+            <p>Improve your Spoken English Fluency for global communication, confidence, networking, career growth, leadership, presentations, client interactions, and success.
+            </p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+
+        <!-- Example for a few more slides -->
+        <div class="swiper-slide">
+          <div class="slide-content">
+            <img src="happy-indian-housewife-saree-looking-camera_658385-1086.jpg" alt="Image">
+            <h5>Housewife </h5>
+            <p>A housewife benefits from learning spoken English by confidently attending school open houses, talking to teachers, interacting with children’s friends, and traveling easily.
+            </p>
+            <a href="#" class="btn btn-primary">Apply Now</a>
+          </div>
+        </div>
+        <!-- Add up to 12 slides -->
+      </div>    
+      <div class=""></div> 
+    </div>
+        <h2 class="text-center mb-5">Student Stories</h2>
+        <p style="text-align: center;margin-top:-50px;">TutorBin has received over 3,000 positive ratings from users worldwide. Many students and teachers have greatly benefited from the services provided by TutorBin.</p>
+        <div class="row" style="height: 370px;">
+          <!-- Feedback Card 1 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="portrait-friendly-looking-happy-attractive-male-model-with-moustache-beard-wearing-trendy-transparen_1.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Person 1" style="width: 100px; height: 100px;">
+              <div class="card-body text-center">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">"After using their service, I decided to return whenever I need help. They never disappoint, providing well-researched homework that boosts your performance and helps you outshine your peers."</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Feedback Card 2 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="young-beautiful-woman-pink-warm-sweater-natural-look-smiling-portrait-isolated-long-hair_285396-896.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Person 2" style="width: 100px; height: 100px;">
+              <div class="card-body text-center">
+                <h5 class="card-title">Jane Smith</h5>
+                <p class="card-text">"Since using this service, my life has become easier, giving me more time for exam prep. TutorBin exceeded my expectations with timely, high-quality work, and my grades have improved significantly."</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Feedback Card 3 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="handsome-attractive-young-european-man-casual-shirt-with-dark-hair-blue-eyes-keeping-arms-folded-con_1.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Person 3" style="width: 100px; height: 100px;">
+              <div class="card-body text-center">
+                <h5 class="card-title">Mike Johnson</h5>
+                <p class="card-text">"They are amazing! I asked for help with my art assignment, and the answers were unique and plagiarism-free. Their support helped me impress my professor, and I highly recommend their service."</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- Feedback Card 4 -->
+          <div class="col-md-3 mb-4">
+            <div class="card">
+              <img src="beautiful-indian-traditional-girl-posing-white-wall_136354-5491.jpg" class="card-img-top rounded-circle mx-auto mt-3" alt="Person 3" style="width: 100px; height: 100px;">
+              <div class="card-body text-center">
+                <h5 class="card-title">Monica Bing</h5>
+                <p class="card-text">"They are amazing! I asked for help with my art assignment, and the answers were unique and plagiarism-free. Their support helped me impress my professor, and I highly recommend their service."</p>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <section id="contact" class="bg-light py-3">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="display-4">Contact Us</h2>
+                <p class="lead">We'd love to hear from you! Please feel free to reach out with any questions or comments.</p>
+                
+                <!-- Contact Form -->
+                <form>
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" class="form-label">Your Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+              </div>
+              <div class="col-md-6">
+                <h3>Our Location</h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.492621739954!2d73.08525871041817!3d19.21735088194152!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7958b33f55fcf%3A0x1208d7401d2b44fe!2sSpeakwell%20English%20Academy%20Dombivali%20East!5e0!3m2!1sen!2sin!4v1737455061889!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+          
+    <!-- Footer Section -->
+<footer class="bg-dark text-white py-4">
+  <div class="container">
+    <div class="row">
+      <!-- Logo and Company Name -->
+      <div class="col-md-4 text-center text-md-start">
+        <img src="https://via.placeholder.com/150x50" alt="Class Logo" class="footer-logo">
+        <h4>Class</h4>
+        <p>Leading the future of English Speaking.</p>
+      </div>
+      <!-- Quick Links -->
+      <div class="col-md-2">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="index.html" class="text-white">Home</a></li>
+          <li><a href="#notes" class="text-white">Notes</a></li>
+          <li><a href="#Assignments" class="text-white">Assignments</a></li>
+          <li><a href="#contact" class="text-white">Contact</a></li>
+        </ul>
+      </div>
+      <!-- Address and Contact Info -->
+      <div class="col-md-3">
+        <h5>Contact Info</h5>
+        <p><strong>Address:</strong> Dombivali East</p>
+        <p><strong>Phone:</strong> +91 98765432101</p>
+        <p><strong>Email:</strong> mail@class.com</p>
+      </div>
+      <!-- Social Media Links -->
+      <div class="col-md-3">
+        <h5>Follow Us</h5>
+        <div class="social-icons">
+          <a href="https://facebook.com" target="_blank" class="text-white"><i class="fab fa-facebook"></i></a>
+          <a href="https://twitter.com" target="_blank" class="text-white"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" class="text-white"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank" class="text-white"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Initialize Swiper
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 3,
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 3000, // Slide changes every 3 seconds
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        // Responsive settings
+        320: {
+          slidesPerView: 1,
+        },
+        480: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 3,
+        },
+        1024: {
+          slidesPerView: 4,
+        },
+      }
+    });
+  </script>
+    
+</body>
+</html>
