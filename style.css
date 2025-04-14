@@ -1,0 +1,331 @@
+nav{
+    background-color: rgb(34, 151, 190);
+    font-weight: bold;
+}
+#video-container{
+    height: 370px;
+}
+video{
+    height: 480px;
+}
+.topic-box {
+    height: 64px; /* Set height for topic box */
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px; /* Add some space between the topic boxes */
+}
+h2{
+    text-align: center;
+}
+
+/* Custom container styles */
+.container-main {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/* Small container styles */
+.small-container {
+    position: relative;
+    width: 30%;
+    margin-bottom: 20px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image styling */
+.container-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Logo styling (if you want a logo on top of image) */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Text styling (below the image) */
+.description {
+    padding: 15px;
+    text-align: center;
+    background-color: #f8f9fa;
+}
+
+.description h5 {
+    color: #007bff;
+    font-size: 18px;
+}
+
+.description p {
+    color: #555;
+    font-size: 14px;
+}
+.section-title {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bold;
+}
+#box{
+    margin-top: 140px;
+    background-color: rgb(228, 228, 228);
+}
+#box1{
+    height: 100px;
+}
+.contact-info {
+    margin-top: 50px;
+}
+.contact-info h4 {
+    margin-bottom: 20px;
+}
+#div2{
+    border: 1px solid black;
+    width: 100%;
+}
+#swipe1{
+    position: absolute;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-width: 100%;
+  }
+
+  .sub-container {
+    width: 100%;
+    max-width: calc(100% / 8 - 20px); /* Adjust for 3 items per row on larger screens */
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .sub-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  .button:hover {
+    background-color: #0056b3;
+  }
+
+  @media (max-width: 768px) {
+    .sub-container {
+      max-width: calc(100% / 4 - 20px); /* 2 items per row for medium screens */
+    }
+    video{
+        margin-top: -50px;
+        height: 300px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .sub-container {
+      max-width: calc(100% / 4 - 20px); /* 1 item per row for small screens */
+    }
+    .sub-container img{
+        width: 70px;
+    }
+    .button{
+        font-size: 10px;
+        width: 80px;
+        margin-left: -10px;
+        text-align: center;
+    }
+  }
+/* Responsive design */
+@media (max-width: 768px) {
+    .small-container {
+        width: 100%;
+    }
+    #image{
+        height: 220px;
+    }
+    #box{
+        margin-top: 370px;
+    }
+    #box1{
+        height: 100px;
+    }
+    #d1{
+        width: 70px;
+        margin-left: -33px;
+        height: 115px;
+        margin-top: -10px;
+    }
+    #d2{
+        margin-left: -24px;
+        width: 70px;
+        height: 115px;
+        margin-top: -10px;
+    }
+    #d3{
+        margin-left: -14px;
+        width: 70px;
+        height: 115px;
+        margin-top: -10px;
+    }
+    #d4{
+        margin-left: -5px;
+        width: 70px;
+        height: 115px;
+        margin-top: -10px;
+    }
+    #d5{
+        width: 70px;
+        height: 115px;
+        margin-top: -10px;
+        margin-left: 5px;
+    }
+    #heading{
+        margin-top: -20px;
+    }
+    #contact{
+        margin-top: 1050px;
+    }
+    iframe{
+        width: 350px;
+    }
+    footer{
+        margin-top: 500px;
+    }
+}
+#i1{
+    width: 700px;
+}
+.div1{
+    height: 140px;
+    width: 330px;
+    margin-left: 700px;
+    margin-top: -467px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(22, 218, 205);
+    color: white;
+    font-weight: bold;
+}
+.div2{
+    height: 140px;
+    width: 320px;
+    margin-left: 1020px;
+    margin-top: -140px;
+    text-align: center;
+    font-size: 27px;
+    background-color: rgb(247, 153, 184);
+    font-weight: bold;
+}
+.div3{
+    height: 200px;
+    width: 330px;
+    margin-left: 700px;
+    text-align: center;
+    font-size: 27px;
+    background-color: rgb(203, 126, 241);
+    color: white    ;
+    font-weight: bold;
+}
+.div4{
+    height: 200px;
+    width: 320px;
+    margin-left: 1020px;
+    margin-top: -200px;
+    text-align: center;
+    font-size: 24px;
+    background-color: orange;
+    font-weight: bold;
+}
+.div5{
+    height: 130px;
+    width: 330px;
+    margin-left: 700px;
+    text-align: center;
+    font-size: 30px;
+    background-color: blueviolet;
+    color: white;
+    font-weight: bold;
+}
+.div6{
+    height: 130px;
+    width: 320px;
+    margin-left: 1020px;
+    margin-top: -130px;
+    text-align: center;
+    font-size: 30px;
+    background-color: rgb(255, 234, 101);
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .content{
+        height: 1150px;
+    }
+    #i1{
+        height: 200px;
+        width: 100%;
+    }
+    .div1{
+        margin-left: 1px;
+        margin-top: 1px;
+        width: 100%;
+    }
+    .div2{
+        margin-left: -10px;
+        margin-top: 1px;
+        width: 385px;
+    }
+    .div3{
+        margin-left: -10px;
+        width: 385px;
+    }
+    .div4{
+        margin-left: -10px;
+        margin-top: 0px;
+        width: 385px;
+    }
+    .div5{
+        margin-left: -10px;
+        width: 385px;
+    }
+    .div6{
+        margin-left: -10px;
+        width: 385px;
+        margin-top: 1px;
+    }
+}
